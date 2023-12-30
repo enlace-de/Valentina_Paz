@@ -1,0 +1,158 @@
+.cabecera{
+    height: 40px;
+    background-color: #9a3cdd;
+}
+
+.seccion1{
+    background-image: url(../img/textura2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 140px;
+}
+
+/* Definición de la animación */
+@keyframes girar {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Aplicación de la animación a la imagen */
+.logoCabecera {
+    width: 200px;
+    border-radius: 10%;
+    margin-top: 30px;
+    border: 3px solid white;
+    /*animation: girar 1s linear; /* Duración y efecto de la animación */
+}
+.animacion {
+    animation: girar 1s linear;
+}
+
+
+.iconoCuerpo {
+    color: white; 
+    background-color: #031c7d;
+    padding-top: 17px;
+    border-radius: 50%; /* Cambiamos el valor a 50% para hacer un círculo */
+    font-size: 35px;
+    width: 70px; /* Establecemos el ancho y el alto iguales */
+    height: 70px;
+    text-align: center; /* Opcional: centraremos el contenido del círculo */
+    line-height: 100px; /* Opcional: centraremos verticalmente el contenido */
+    box-shadow: 3px 2px 9px rgba(0, 0, 0, 0.7);
+    
+}
+
+.textIcono{
+    font-weight: 700;
+    color: #031c7d;
+    font-size: 15px;
+    margin-bottom: 25px;
+    margin-top: 5px;
+}
+.tituto-general{
+    font-size: 18px;
+    margin-top: 70px;
+    color: #434344;
+}
+.linea-titulo{
+    width: 48%;
+    margin-left: auto;
+    margin-right: auto;
+    color: #eb668b;
+    border-bottom: 2px solid #eb668b;
+    margin-top: -4px;
+    margin-bottom: 30px;
+}
+
+.catalogo-pau {
+    text-decoration: none;
+    background-color: #eb668b;
+    color: white;
+    font-size: 15px;
+    padding: 10px 0;
+    border-radius: 7px;
+    display: flex;
+    justify-content: center; /* Alineación horizontal */
+    align-items: center; /* Alineación vertical */
+    width: 50%;
+   
+    margin: 0 auto; /* Centrar horizontalmente */
+    box-shadow: 3px 2px 9px rgba(0, 0, 0, 0.7);
+}
+
+.iconocatal {
+    font-size: 30px;
+    line-height: 1; /* Centrar verticalmente el ícono */
+    padding-left: 8px;
+}
+
+
+.footer-pau{
+    background-color: #434344;
+    height: 40px;
+    padding-top: 5px;
+    margin: 60px;
+}
+.text-footer{
+    text-decoration: none;
+    color: #828283;
+}
+
+
+
+
+
+
+
+
+@media (min-width: 1000px) {
+    body{
+        padding: 0 250px 0 250px;
+    }
+    .tituto-general{
+        font-size: 25px;
+    }
+    .linea-titulo{
+        width: 25%;
+
+    }
+    
+    .catalogo-pau {   
+        width: 30%;
+    }
+    .total{
+        border: 1px solid #434344;
+        padding-bottom: 50px;
+    }
+    .footer-pau{
+        margin: 0px;
+    }
+}
+
+@media (orientation: landscape) {
+    body{
+        padding: 0 150px 0 150px;
+    }
+    .total{
+        border: 1px solid #434344;
+        padding-bottom: 50px;
+    }
+    .footer-pau{
+        margin: 0px;
+    }
+    .linea-titulo{
+        width: 80%;
+
+    }
+    .linea-titulo{
+        width: 40%;
+
+    }
+    
+
+}
